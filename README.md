@@ -14,6 +14,7 @@ Python was used to conduct the analysis in a Jupyter Notebook environment, enabl
 Importing essential libraries like Matplotlib for visualization and Pandas and NumPy for data handling was the first step. Next, the dataset was loaded into a Pandas DataFrame.
 
 A quick examination with .head() and .info() provided a summary of the data structure. This showed that although the information was reasonably comprehensive, null (missing) values were present in a number of columns, including those for revenue, purchases, and marketing spend. Consequently, the following data cleaning techniques were used:
+
   • All column headers were converted to lower case to ensure consistency during the Python data exploration stage.
   • The data type of the date column was changed to datetime.
   • Rows with null values were not removed as they accounted for a significant portion of the data set (27%). Instead, all null values were replaced with the median of the respective columns.
